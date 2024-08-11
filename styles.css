@@ -24,24 +24,26 @@ body {
 
 .form-box {
     background-color: #fff;
-    padding: 20px;
+    padding: 15px;
     margin: 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    max-height: 80vh; /* Limit height to keep it shorter */
+    overflow-y: auto; /* Add scroll if content exceeds height */
     box-sizing: border-box;
 }
 
 .section {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduce margin for shorter form */
 }
 
 .about-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Adjust spacing between details and image */
 }
 
 .about-details {
@@ -63,7 +65,7 @@ body {
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduce margin to shorten the form */
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f4f4f4;
@@ -77,11 +79,11 @@ textarea {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 15px; /* Reduce gap between columns */
 }
 
 .education, .contact-info {
-    padding: 15px;
+    padding: 10px; /* Adjust padding to keep sections proportionate */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
