@@ -115,3 +115,33 @@ footer {
 .about {
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+        padding: 6px;
+    }
+}
