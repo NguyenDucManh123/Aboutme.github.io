@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Về Tôi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section id="about-education-contact" class="form-box">
+            <div class="section about">
+                <h2>Giới thiệu bản thân</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Thông Tin Cơ Bản</legend>
+                        <div class="about-info">
+                            <div class="about-details">
+                                <label for="full-name">Họ và Tên:</label>
+                                <input type="text" id="full-name" name="full-name" value="Nguyễn Đức Manh" readonly><br><br>
+
+                                <label for="gender">Giới Tính:</label>
+                                <input type="text" id="gender" name="gender" value="Nam" readonly><br><br>
+
+                                <label for="dob">Ngày Sinh:</label>
+                                <input type="date" id="dob" name="dob" value="2004-03-25" readonly><br><br>
+                            </div>
+                            <div class="about-image">
+                                <img src="images.jpg" alt="Hình Ảnh Của Bạn" id="profile-image">
+                            </div>
+                        </div>
+
+                        <label for="bio">Sở Thích</label><br>
+                        <textarea id="bio" name="bio" rows="4" cols="50" readonly>
+Nghe nhạc, xem Youtube, chơi game
+                        </textarea><br><br>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="section grid-container">
+                <div class="education">
+                    <h2>Giáo Dục</h2>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Quá Trình Học Tập</legend>
+                            <label for="school">Trường Học:</label>
+                            <input type="text" id="school" name="school" value="Nguyễn Tất Thành" readonly><br><br>
+
+                            <label for="class">Lớp:</label>
+                            <input type="text" id="class" name="class" value="22BITV05" readonly><br><br>
+
+                            <label for="subject">Môn Học:</label>
+                            <input type="text" id="subject" name="subject" value="Thiết kế web" readonly><br><br>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Thông Tin Liên Hệ</h2>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Chi Tiết Liên Hệ</legend>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="2200010420@nttu.edu.vn" readonly><br><br>
+
+                            <label for="phone">Số Điện Thoại:</label>
+                            <input type="tel" id="phone" name="phone" value="0389709051" readonly><br><br>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
