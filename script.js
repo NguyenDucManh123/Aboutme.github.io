@@ -1,4 +1,4 @@
-// Array of colors excluding black and white
+
 const colors = [
     "#FF5733", // Red-Orange
     "#33FF57", // Green
@@ -10,16 +10,15 @@ const colors = [
     "#F33F3F"  // Red
 ];
 
-// Function to get a random color from the array
+
 function getRandomColor() {
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
 }
 
-// Function to change the background color every 5 seconds
+
 function changeBackgroundColor() {
     document.body.style.backgroundColor = getRandomColor();
 }
 
-// Change the background color every 5 seconds (5000 milliseconds)
 setInterval(changeBackgroundColor, 5000);
