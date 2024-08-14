@@ -8,73 +8,70 @@
 </head>
 <body>
     <div class="container">
-        <section id="about-education-contact" class="form-box">
-            <div class="section about">
-                <h2>Giới thiệu bản thân</h2>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Thông Tin Cơ Bản</legend>
-                        <div class="about-info">
-                            <div class="about-details">
-                                <label for="full-name">Họ và Tên:</label>
-                                <input type="text" id="full-name" name="full-name" value="Nguyễn Đức Manh" readonly><br><br>
+        <div class="side-buttons">
+            <a href="#" class="side-button" id="intro-button">Giới thiệu về bản thân</a>
+            <a href="#" class="side-button" id="games-button">Trò chơi</a>
+        </div>
 
-                                <label for="gender">Giới Tính:</label>
-                                <input type="text" id="gender" name="gender" value="Nam" readonly><br><br>
-
-                                <label for="dob">Ngày Sinh:</label>
-                                <input type="date" id="dob" name="dob" value="2004-03-25" readonly><br><br>
-                            </div>
-                            <div class="about-image">
-                                <img src="images.jpg" alt="Hình Ảnh Của Bạn" id="profile-image">
-                            </div>
-                        </div>
-
-                        <label for="bio">Sở Thích</label><br>
-                        <textarea id="bio" name="bio" rows="4" cols="50" readonly>
-Nghe nhạc, xem Youtube, chơi game
-                        </textarea><br><br>
-                    </fieldset>
-                </form>
+        <div class="intro-education-wrapper" id="intro-education-wrapper">
+            <div class="intro-education-image">
+                <img src="images.jpg" alt="Hình Ảnh Của Bạn" id="profile-image">
             </div>
-
-            <div class="section grid-container">
-                <div class="education">
+            <section id="intro-education">
+                <div class="intro-education-content">
+                    <h2>Giới thiệu bản thân</h2>
+                    <p><strong>Họ và Tên:</strong> Nguyễn Đức Mạnh</p>
+                    <p><strong>Giới Tính:</strong> Nam</p>
+                    <p><strong>Ngày Sinh:</strong> 2004-03-25</p>
+                    <p><strong>Sở Thích:</strong> Nghe nhạc, xem Youtube, chơi game</p>
+                    
                     <h2>Giáo Dục</h2>
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>Quá Trình Học Tập</legend>
-                            <label for="school">Trường Học:</label>
-                            <input type="text" id="school" name="school" value="Nguyễn Tất Thành" readonly><br><br>
-
-                            <label for="class">Lớp:</label>
-                            <input type="text" id="class" name="class" value="22BITV05" readonly><br><br>
-
-                            <label for="subject">Môn Học:</label>
-                            <input type="text" id="subject" name="subject" value="Thiết kế web" readonly><br><br>
-                        </fieldset>
-                    </form>
+                    <p><strong>Trường Học:</strong> Nguyễn Tất Thành</p>
+                    <p><strong>Lớp:</strong> 22BITV05</p>
+                    <p><strong>Môn Học:</strong> Thiết kế web</p>
                 </div>
+            </section>
+        </div>
 
-                <div class="contact-info">
-                    <h2>Thông Tin Liên Hệ</h2>
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>Chi Tiết Liên Hệ</legend>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" value="2200010420@nttu.edu.vn" readonly><br><br>
-
-                            <label for="phone">Số Điện Thoại:</label>
-                            <input type="tel" id="phone" name="phone" value="0389709051" readonly><br><br>
-
-                        </fieldset>
-                    </form>
-                </div>
+        <div class="black-board" id="black-board">
+            <div id="game-area" class="game-area">
+                <h2>Trò Chơi</h2>
+                <p>Kéo chuột của bạn vào ô màu xanh, thời gian sẽ tăng dần sau mỗi lần thành công. Kéo 8 lần để thắng!</p>
+                <div id="target-area" class="target-area"></div>
+                <p id="game-message"></p>
             </div>
-        </section>
+            <button id="close-button">Close</button>
+            <div id="replay-prompt" class="replay-prompt">
+                <p id="game-message">Game Message</p>
+                <button id="replay-button">Replay</button>
+                <button id="stop-button">Stop</button>
+            </div>
+            
+        </div>
     </div>
 
+    <footer>
+        <div class="footer-title">
+            <legend>Thông Tin Liên Hệ</legend>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Email: 2200010420@nttu.edu.vn</p>
+            </div>
+            <div class="footer-section">
+                <p>Số Điện Thoại: 0389709051</p>
+            </div>
+            <div class="footer-section social-media">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="images.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="f1x5vdqx0aa9sgt-16901896163331463104829.webp" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
-    
 </body>
 </html>
